@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css' media=screen>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src='main.js'></script>    
+    <script>
+        $(document).ready(function(){
+            $("a").click(function(){
+                if($(this).hasClass('active')){
+                    $(this).removeClass('active')
+                }
+                else{
+                    $(this).addClass('active')
+                }
+                
+            });
+      });
+    </script>
+</head>
+<body>
+    
+
+        <div id="menu">
+            <nav  class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#personalData" role="button" aria-expanded="false" aria-controls="personalData">Datos Personales</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#expWork" role="button" aria-expanded="false" aria-controls="expWork">Experiencia Laboral</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#education" role="button" aria-expanded="false" aria-controls="education">Educacion</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#skills" role="button" aria-expanded="false" aria-controls="skills">Habilidades</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        
+    
+   
+
+      
+      <div class="container">
+        <!--Datos Personales-->
+        <div class="collapse multi-collapse" id="personalData">
+          <br>
+          <div class="card card-body">
+            <div class="container px-4">
+
+              <div class="row gx-5">
+                <div class="col-4">
+                 <img src="assert/fotoCv.png" class="img-thumbnail" >
+                </div>
+                <div class="col-8">
+                  <div class="p-3 card card-body" style="border: none;">
+                    <p><i class="fa-solid fa-location-dot"></i><span class="personalData">Ciudadela, Tres de Frebrero, Buenos Aires</span></p>
+                    <p><i class="fa-solid fa-envelope"></i><span class="personalData">meridacindy98@gmail.com</span></p>
+                    <p><i class="fa-solid fa-phone"></i><span class="personalData">1169118742</span></p>
+                    <p><i class="fa-brands fa-linkedin"></i><a class="personalData" href="https://www.linkedin.com/in/cindy-aylen-rojas-merida-5a1869115/">linkedin.com/in/cindy-aylen-rojas-merida</a></p>
+                    <p><i class="fa-brands fa-github"></i><a class="personalData" href="https://github.com/meridacindy98">github.com/meridacindy98</a></p>
+                    <hr>
+                    <h4>SOBRE MI</h4>                    
+                    <p>
+                      Me especializo en desarrollo en Java y estudio otras tecnologias como hobbie en
+                      mis tiempos libres debido a que me gusta estar en constante capacitación.
+                      Me gusta tomar desafios y busco sacar la mayor experiencia de los mismos.
+                      Tambien disfruto de trabajar en equipo y poder colaborar con otros sectores y
+                      personas, no tengo problemas con la integración de sectores y me gusta fomentar el
+                      compañerismo y el buen ambiente laboral.
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+              
+          <!--Tarjeta Experiencia Laboral-->
+          <div class="collapse multi-collapse" id="expWork">
+            <br>
+            <div class="card card-body">
+                <h4>EXPETIENCIA LABORAL</h4>
+                <div class="accordion" id="accordionExample">
+
+                    <!--Desarrolladora Backend - Redbee-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingRedbee">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedbee" aria-expanded="true" aria-controls="collapseRedbee">
+                            Desarrolladora Backend - Redbee
+                          </button>
+                        </h2>
+                        <div id="collapseRedbee" class="accordion-collapse collapse show" aria-labelledby="headingRedbee" >
+                          <div class="accordion-body">
+                            <p class="mb-2 text-muted">Diciembre 2021 - Actualidad</p>
+                            <p>Mantenimiento y desarrollo evolutivo a diversos microservicios para el cliente
+                                Prisma para su producto Decidir.<br>
+                                Tecnologías utilizadas: Scala, Play, Redis, Docker, MySql, Slick.</p>
+                          </div>
+                        </div>
+                      </div>
+                    
+                    <!--Desarrolladora Java - Baufest-->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingBaufest">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBaufest" aria-expanded="false" aria-controls="collapseBaufest">
+                          Desarrolladora Java - Baufest
+                        </button>
+                      </h2>
+                      <div id="collapseBaufest" class="accordion-collapse collapse" aria-labelledby="headingBaufest">
+                        <div class="accordion-body">
+                            <p class="mb-2 text-muted">Abril 2021 - Diciembre 2021</p>
+                            <p>Mantenimiento y desarrollo evolutivo a diversos microservicios para el cliente
+                                Galicia Rural.<br>
+                                Tecnologías utilizadas: Java, Hibernate, SpringBoot, MongoDb, NodeJs.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--Desarrolladora Java - Sysone-->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingSysone">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSysone" aria-expanded="false" aria-controls="collapseSysone">
+                            Desarrolladora Java - Sysone
+                        </button>
+                      </h2>
+                      <div id="collapseSysone" class="accordion-collapse collapse" aria-labelledby="headingSysone">
+                        <div class="accordion-body">
+                            <p class="mb-2 text-muted">Enero 2021 - Abril 2021</p>
+                            <p>Mantenimiento y desarrollo evolutivo a aplicaciones web para diversos clientes
+                                como: Sancor Seguros, Bice Vida, Santa Cruz Seguros.<br>
+                                Tecnologías utilizadas: Java, JPA, Hibernate, Spring, SpringBoot, SQL Server, MySQL.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--Desarrolladora Fullstack - TGV-->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTGV">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTGV" aria-expanded="false" aria-controls="collapseTGV">
+                            Desarrolladora Fullstack - TGV
+                        </button>
+                      </h2>
+                      <div id="collapseTGV" class="accordion-collapse collapse" aria-labelledby="headingTGV">
+                        <div class="accordion-body">
+                            <p class="mb-2 text-muted">Mayo 2019 - Diciembre 2020</p>
+                            <h6>Sancor Seguros Proyecto Nova</h6>
+                            <p>Mantenimiento y desarrollo evolutivo a una aplicación java web con varios
+                                frameworks utilizados en el mercado actual, como Hibernate y Spring.<br>
+                                Tecnologías utilizadas: Java, Jboss, Hibernate, Spring, Axis, SQL Server, JPA.</p>
+
+                            <h6>Toyota</h6>
+                            <p>Desarrollo de nuevas funcionalidades en la pagina de toyota utilizada por los
+                                empleados.<br>
+                                Tecnologías utilizadas: Java, Servlets, JSP.</p>
+
+                            <h6>ICC</h6>
+                            <p>Desarrollo de un nuevo modulo para ICC en Angular.</p>
+
+                            <h6>Capacitacion inicial Java</h6>
+                            <p>Desarrollo de una aplicación web en Java desarrollada utilizando varios frameworks
+                                conocidos, como Hibernate, Spring y Maven. Aplicación MVC de una página web con
+                                una intranet por roles utilizando SQL Server como base de datos y elementos de
+                                Bootstrap para el frontend.</p>
+                            
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+
+          <!--Educacion-->
+            <div class="collapse multi-collapse" id="education">
+                <br>
+                <div class="card card-body">
+                <h4>EDUCACION</h4>
+                <h6>Escuela Técnica Nº 35 - Ing. Eduardo Latzina</h6>
+                <p class="mb-2 text-muted">Tecnica en Computación<br>
+                    2011-2016</p>
+                </div>
+            </div>
+
+            <!--Habilidades-->
+            <div class="collapse multi-collapse" id="skills">
+                <br>
+                <div class="card card-body">
+                    <h4>HABILIDADES</h4>
+                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                        <div class="col">
+                          <div class="p-3 border bg-light">Java</div>
+                        </div>
+                        <div class="col">
+                          <div class="p-3 border bg-light">Javascript</div>
+                        </div>
+                        <div class="col">
+                          <div class="p-3 border bg-light">Angular</div>
+                        </div>
+                        <div class="col">
+                          <div class="p-3 border bg-light">HTML5 & CSS</div>
+                        </div>
+                        <div class="col">
+                          <div class="p-3 border bg-light">SpringBoot</div>
+                        </div>
+                        <div class="col">
+                          <div class="p-3 border bg-light">Api Rest</div>
+                        </div>
+                        <div class="col">
+                          <div class="p-3 border bg-light">SQL Server</div>
+                        </div>
+                        <div class="col">
+                          <div class="p-3 border bg-light">Git</div>
+                        </div>
+                        <div class="col">
+                          <div class="p-3 border bg-light">Hibernate</div>
+                        </div>
+                        <div class="col">
+                          <div class="p-3 border bg-light">Git</div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+      </div>    
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/402bbc15d0.js" crossorigin="anonymous"></script>
+</body>
+</html>
